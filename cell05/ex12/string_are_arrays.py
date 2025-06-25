@@ -11,7 +11,6 @@ def main():
     input_string = arguments[0]
     count = input_string.count('z')
     
-    # Handle the z count cases
     if count == 0:
         print("none")
     else:
