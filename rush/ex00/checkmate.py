@@ -14,6 +14,11 @@ def checkmate(board_str):
         if king_x != -1:
             break
 
+            #King's missing from the board
+    if king_x == -1 or king_y == -1:
+        print("Fail")
+        return
+
     # Step 2: Check for threats from Rooks or Queens (straight lines)
     # Directions: up, down, left, right
     straight_directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]

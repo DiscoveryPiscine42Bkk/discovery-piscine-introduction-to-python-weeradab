@@ -26,12 +26,19 @@ def main():
 ....
 ....
 """
+    board5 = """
+R...
+.K..
+..P.
+....
+"""
 
     # Test the checkmate function
     print("Board 1 (King threatened by pawn):", checkmate(board1))
     print("Board 2 (King threatened by queen):", checkmate(board2))
     print("Board 3 (King threatened by bishop):", checkmate(board3))
     print("Board 4 (King safe):", checkmate(board4))
+    print("Board 5 (King missing):", checkmate(board5))
 
 if __name__ == "__main__":
     main()
